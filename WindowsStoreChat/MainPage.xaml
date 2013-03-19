@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="WindowsStoreChat.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WindowsStoreChat"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"></ColumnDefinition>
+            <ColumnDefinition Width="350"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="Din beskjed: " FontSize="20" Grid.Row="0" Grid.Column="0"></TextBlock>
+        <TextBox x:Name="Message" Grid.Row="0" Grid.Column="1" FontSize="20"></TextBox>
+        <Button x:Name="BtnSend" Grid.Row="0" Grid.Column="2" Content="Send beskjed"></Button>
+        <TextBlock x:Name="Messages" Grid.Row="1" Grid.ColumnSpan="3" FontSize="20" TextWrapping="Wrap"></TextBlock>
+    </Grid>
+</Page>
